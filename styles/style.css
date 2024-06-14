@@ -1,0 +1,10 @@
+body {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 400; 
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--black);
+}
