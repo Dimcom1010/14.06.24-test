@@ -9,4 +9,6 @@
     --header-bg-color:#10101Daa;
     --footer-bg-color:#3D4050;
     --transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    --container: 1172px;
 }
