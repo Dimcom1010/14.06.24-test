@@ -1,0 +1,12 @@
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --main-color: #3E9CDC;
+    --border-color:#6F6D7B;
+    --border-color:#286690;
+    --text-color:#C3C3C3;
+    
+    --header-bg-color:#10101Daa;
+    --footer-bg-color:#3D4050;
+    --transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
