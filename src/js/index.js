@@ -41,3 +41,21 @@ const transferMenuItems = () => {
 const clearingMenuItems = () => {
     navMobileUl.innerHTML = "";
 };
+
+// обработка события range
+const rangeInput = document.getElementById("range");
+const percent = document.getElementById("percent");
+
+rangeInput.addEventListener("input", () => {
+    const value = rangeInput.value;
+    percent.textContent = `${value} %`;
+});
+
+const n = 33; // Количество точек
+const dots = document.querySelector(".dots");
+
+for (let i = 0; i < n; i++) {
+    let dot = document.createElement("div");
+    dot.classList.add("dot");
+    dots.appendChild(dot);
+}
