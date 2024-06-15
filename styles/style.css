@@ -1,16 +1,15 @@
-
 :root {
     --black-color: #000000;
     --white-color: #ffffff;
-    --main-color: #3E9CDC;
-    --border-color:#6F6D7B;
-    --border-color:#286690;
-    --text-color:#C3C3C3;
-    
-    --header-bg-color:#10101Daa;
-    --footer-bg-color:#3D4050;
+    --main-color: #3e9cdc;
+    --border-color: #6f6d7b;
+    --border-color: #286690;
+    --text-color: #c3c3c3;
+
+    --header-bg-color: #10101daa;
+    --footer-bg-color: #3d4050;
     --transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+
     --container: 1172px;
 }
 
@@ -42,30 +41,29 @@ body {
     right: 0;
     background-color: var(--header-bg-color);
 }
-.header__container{
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     color: var(--white-color);
 }
-.menu{
+.menu {
     display: flex;
     gap: 45px;
-
 }
-.menu__item{
+.menu__item {
     cursor: pointer;
     padding: 5px;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
 }
-.menu__item:hover{
+.menu__item:hover {
     color: var(--main-color);
 }
 
-.main{
+.main {
     /* background-color: aqua; */
 }
 
@@ -76,37 +74,63 @@ section.lable {
 .footer {
     flex: 0 0 auto;
     width: 100%;
-    height: 80px;
     background-color: var(--footer-bg-color);
     color: var(--text-color);
     font-size: 14px;
-    padding-block: 30px;
-    
 }
-.footer__container{
+.footer__container {
     display: flex;
-    
+    align-items: center;
     justify-content: space-between;
 }
-.footer__copyright{
-    width: 33%;
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+    }
 }
-.footer__wallets{
+
+
+.footer__copyright {
+    margin-block: 30px;
+    text-wrap: nowrap;
+}
+@media (max-width: 768px) {
+    .footer__copyright  {
+        margin-block: 10px;
+    }
+}
+
+.footer__section {
     display: flex;
-    width: 33%;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+    margin-block: 30px;
+    gap: 15px;
 }
-.wallet{
-    display: flex;
-}
-
-.footer__contacts{
-    display: flex;
-    width: 33%;
-    justify-content: space-around;
-}
-.contact{
-    display: flex;
+@media (max-width: 768px) {
+    .footer__section  {
+        margin-block: 10px;
+    }
 }
 
+.footer__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
+
+
+.separation {
+    display: flex;
+    height: 17px;
+    width: 1px;
+    background: var(--text-color);
+    margin-inline: 10px;
+}
+@media (max-width: 768px) {
+    .separation {
+        display: none;
+    }
+}
