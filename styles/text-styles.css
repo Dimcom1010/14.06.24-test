@@ -1,4 +1,3 @@
-
 h1 {
     color: var(--black-color);
     font-weight: 700;
@@ -7,7 +6,6 @@ h1 {
     line-height: 58px;
     text-transform: uppercase;
 }
-
 
 h1 b{
     color: var(--main-color);

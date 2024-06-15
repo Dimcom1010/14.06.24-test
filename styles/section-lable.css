@@ -24,9 +24,11 @@
     gap: 5px;
     margin-left: 24px;
 }
+
 .lable__theses ul li {
     position: relative;
 }
+
 .lable__theses ul li::before {
     content: "";
     display: block;

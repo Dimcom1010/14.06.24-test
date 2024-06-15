@@ -15,19 +15,21 @@
     height: 100px;
     color: var(--white-color);
 }
+
 .header__logo{
     display: flex;
     max-width: 245px;
     margin-right: 30px;
 }
+
 .header__logo svg{
     width: 100%;
 }
+
 .menu {
     display: flex;
     gap: 52px;
 }
-
 
 .menu__item{
     cursor: pointer;
@@ -36,6 +38,7 @@
     font-size: 13px;
     text-transform: uppercase;
 }
+
 .menu__item a{
     color: var(--text-color);
     transition: var(--transition);
@@ -52,6 +55,7 @@
     cursor: pointer;
     transition: var(--transition);
 }
+
 .burger-menu span {
     position: absolute;
     display: flex;
@@ -84,22 +88,27 @@
 .burger-menu.active span {
     transform: translateY(-50%) scaleZ(0);
 }
+
 .burger-menu.active::before {
     transform: translateY(8px) rotateZ(-45deg);
 }
+
 .burger-menu.active::after {
     transform: translateY(-8px) rotateZ(45deg);
 }
+
 .nav-mobile-menu{
     display: flex;
     
     width: 100%;
 }
+
 .nav-mobile-ul{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .nav-mobile-menu li{
     display: flex;
     width: 100%;

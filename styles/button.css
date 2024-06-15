@@ -5,6 +5,7 @@
     border-radius: 4px;
     transition: var(--transition);
 }
+
 .button:hover {
     color: var(--white-color);
     background-color: var(--main-color);
@@ -16,10 +17,12 @@
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
 }
+
 .button.primery:hover {
     color: var(--black-color);
     border: 1px solid var(--black-color);
 }
+
 .button.primery.sabmit {
     width: 100%;
     display: flex;
@@ -28,6 +31,7 @@
     padding: 12px 0px;
     border-color: var(--white-color);
 }
+
 .button.primery.sabmit {
     border-color: var(--black-color);
 }
