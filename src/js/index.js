@@ -21,7 +21,7 @@ burgerMenu.addEventListener("click", function () {
 });
 
 // блок переноса пунктов меню при активации меню бургер
-const [navUl, navMobileUl] = ["#nav-ul", "#nav-mobile-ul"].map((e) =>
+const [navUl, navMobileUl] = ["#nav-ul", ".nav-mobile-ul"].map((e) =>
     document.querySelector(e)
 );
 
