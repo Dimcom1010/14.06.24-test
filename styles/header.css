@@ -15,6 +15,12 @@
     height: 100px;
     color: var(--white-color);
 }
+@media (max-width: 768px) {
+    .header__container {
+        height: 75px;
+
+    }
+}
 
 .header__logo{
     display: flex;

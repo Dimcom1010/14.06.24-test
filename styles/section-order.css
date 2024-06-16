@@ -19,6 +19,7 @@
     justify-content: center;
     margin-top: 32px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .order__steps {
@@ -31,6 +32,7 @@
 @media (max-width: 768px) {
     .order__steps {
         grid-template-columns: 1fr;
+        margin-top: 30px;
     }
 }
 
@@ -132,7 +134,7 @@
     cursor: pointer;   
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
+
 
 }
 .form-item select{

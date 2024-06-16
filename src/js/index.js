@@ -6,17 +6,19 @@ const [burgerMenu, blockingLayer] = [".burger-menu", ".blocking-layer"].map(
     (e) => document.querySelector(e)
 );
 
-burgerMenu.addEventListener("click", function () {
-    [burgerMenu, blockingLayer].forEach((e, i) => {
-        if (e.classList.contains("active")) {
-            e.classList.remove("active");
-            !i && clearingMenuItems();
-        } else {
-            e.classList.add("active");
-            !i && transferMenuItems();
-        }
-    });
-});
+[burgerMenu, blockingLayer].forEach((e) =>
+    e.addEventListener("click", function () {
+        [burgerMenu, blockingLayer].forEach((e, i) => {
+            if (e.classList.contains("active")) {
+                e.classList.remove("active");
+                !i && clearingMenuItems();
+            } else {
+                e.classList.add("active");
+                !i && transferMenuItems();
+            }
+        });
+    })
+);
 
 // блок переноса пунктов меню при активации меню бургер
 const [navUl, navMobileUl] = ["#nav-ul", ".nav-mobile-ul"].map((e) =>
