@@ -1,5 +1,5 @@
 .order {
-    background-image: url("/src/img/main_section_order/bg.jpg");
+    background-image: url("src/img/main_section_order/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -218,7 +218,7 @@
 }
 
 .form-item:active span {
-    background-color: #2e703a;
+    background-color:  var(--main-color);
 }
 
 
@@ -239,6 +239,14 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    height: 27px;
+    width: 27px;
+    cursor: ew-resize;
+    border-radius: 100%;
+    border: 3px solid var(--border-color);
+    background: var(--main-color);
+}
+input[type="range"]::-moz-range-thumb {
     height: 27px;
     width: 27px;
     cursor: ew-resize;
